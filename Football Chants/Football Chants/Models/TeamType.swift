@@ -5,9 +5,10 @@
 //  Created by Bambang Tri Rahmat Doni on 11/12/23.
 //
 
-import Foundation
+import SwiftUI
 
-enum TeamType {
+enum TeamType: Hashable, Identifiable, CaseIterable {
+    var id: Self { return self }
     case arsenal
     case astonVilla
     case brighton

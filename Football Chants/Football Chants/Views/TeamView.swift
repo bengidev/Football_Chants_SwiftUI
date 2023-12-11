@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TeamView.swift
 //  Football Chants
 //
 //  Created by Bambang Tri Rahmat Doni on 11/12/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TeamView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TeamView()
 }

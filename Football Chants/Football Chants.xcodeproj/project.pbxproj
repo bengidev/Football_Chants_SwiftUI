@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B6F7D4902B26A20600FD9F30 /* Football_ChantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D48F2B26A20600FD9F30 /* Football_ChantsApp.swift */; };
-		B6F7D4922B26A20600FD9F30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4912B26A20600FD9F30 /* ContentView.swift */; };
 		B6F7D4942B26A20800FD9F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4932B26A20800FD9F30 /* Assets.xcassets */; };
 		B6F7D4972B26A20800FD9F30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4962B26A20800FD9F30 /* Preview Assets.xcassets */; };
 		B6F7D4B22B26A5A900FD9F30 /* leicester.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4A02B26A5A700FD9F30 /* leicester.mp3 */; };
@@ -30,15 +29,15 @@
 		B6F7D4C22B26A5A900FD9F30 /* sheffield.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4B02B26A5A900FD9F30 /* sheffield.mp3 */; };
 		B6F7D4C32B26A5A900FD9F30 /* fulham.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4B12B26A5A900FD9F30 /* fulham.mp3 */; };
 		B6F7D4C92B26A63000FD9F30 /* TeamType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4C82B26A63000FD9F30 /* TeamType.swift */; };
-		B6F7D4CB2B26A66C00FD9F30 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4CA2B26A66C00FD9F30 /* TeamView.swift */; };
 		B6F7D4CD2B26A67800FD9F30 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4CC2B26A67800FD9F30 /* TeamViewModel.swift */; };
-		B6F7D4CF2B26A68200FD9F30 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4CE2B26A68200FD9F30 /* TeamModel.swift */; };
+		B6F7D4D42B26AA8800FD9F30 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4D32B26AA8800FD9F30 /* TeamView.swift */; };
+		B6F7D4D62B26AAB700FD9F30 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4D52B26AAB700FD9F30 /* Team.swift */; };
+		B6F7D4D92B26AB5C00FD9F30 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4D82B26AB5C00FD9F30 /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6F7D48C2B26A20600FD9F30 /* Football Chants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Chants.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F7D48F2B26A20600FD9F30 /* Football_ChantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_ChantsApp.swift; sourceTree = "<group>"; };
-		B6F7D4912B26A20600FD9F30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6F7D4932B26A20800FD9F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F7D4962B26A20800FD9F30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6F7D4A02B26A5A700FD9F30 /* leicester.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leicester.mp3; sourceTree = "<group>"; };
@@ -60,9 +59,10 @@
 		B6F7D4B02B26A5A900FD9F30 /* sheffield.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheffield.mp3; sourceTree = "<group>"; };
 		B6F7D4B12B26A5A900FD9F30 /* fulham.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fulham.mp3; sourceTree = "<group>"; };
 		B6F7D4C82B26A63000FD9F30 /* TeamType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamType.swift; sourceTree = "<group>"; };
-		B6F7D4CA2B26A66C00FD9F30 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		B6F7D4CC2B26A67800FD9F30 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
-		B6F7D4CE2B26A68200FD9F30 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		B6F7D4D32B26AA8800FD9F30 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		B6F7D4D52B26AAB700FD9F30 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B6F7D4D82B26AB5C00FD9F30 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				B6F7D49D2B26A54400FD9F30 /* Application */,
-				B6F7D4912B26A20600FD9F30 /* ContentView.swift */,
-				B6F7D4CA2B26A66C00FD9F30 /* TeamView.swift */,
-				B6F7D4CC2B26A67800FD9F30 /* TeamViewModel.swift */,
-				B6F7D4CE2B26A68200FD9F30 /* TeamModel.swift */,
-				B6F7D4C82B26A63000FD9F30 /* TeamType.swift */,
+				B6F7D4D02B26AA3700FD9F30 /* Views */,
+				B6F7D4D12B26AA4100FD9F30 /* ViewModels */,
+				B6F7D4D22B26AA4E00FD9F30 /* Models */,
 				B6F7D49E2B26A54E00FD9F30 /* Resources */,
 				B6F7D4952B26A20800FD9F30 /* Preview Content */,
 			);
@@ -155,6 +153,32 @@
 				B6F7D4A12B26A5A700FD9F30 /* wolves.mp3 */,
 			);
 			path = Chants;
+			sourceTree = "<group>";
+		};
+		B6F7D4D02B26AA3700FD9F30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6F7D4D32B26AA8800FD9F30 /* TeamView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6F7D4D12B26AA4100FD9F30 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B6F7D4CC2B26A67800FD9F30 /* TeamViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B6F7D4D22B26AA4E00FD9F30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6F7D4D52B26AAB700FD9F30 /* Team.swift */,
+				B6F7D4C82B26A63000FD9F30 /* TeamType.swift */,
+				B6F7D4D82B26AB5C00FD9F30 /* Manager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F7D4C92B26A63000FD9F30 /* TeamType.swift in Sources */,
-				B6F7D4CF2B26A68200FD9F30 /* TeamModel.swift in Sources */,
-				B6F7D4922B26A20600FD9F30 /* ContentView.swift in Sources */,
+				B6F7D4D92B26AB5C00FD9F30 /* Manager.swift in Sources */,
 				B6F7D4902B26A20600FD9F30 /* Football_ChantsApp.swift in Sources */,
-				B6F7D4CB2B26A66C00FD9F30 /* TeamView.swift in Sources */,
 				B6F7D4CD2B26A67800FD9F30 /* TeamViewModel.swift in Sources */,
+				B6F7D4D62B26AAB700FD9F30 /* Team.swift in Sources */,
+				B6F7D4D42B26AA8800FD9F30 /* TeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
