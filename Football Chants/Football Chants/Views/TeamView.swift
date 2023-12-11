@@ -58,15 +58,12 @@ struct TeamView: View {
                             alignment: .center
                         )
                     }
-                    .padding(10.0)
-                    .background(self.team.id.background)
-                    .clipShape(RoundedRectangle(cornerRadius: 15.0))
+                    .teamCard(self.team.id)
                 }
                 .listStyle(.plain)
             }
             .navigationTitle("Football Chants")
             .navigationBarTitleDisplayMode(.large)
-            .navigationBarColor(backgroundColor: Color.gray.opacity(0.2))
         }
     }
 }

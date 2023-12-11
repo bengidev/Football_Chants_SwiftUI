@@ -1,5 +1,5 @@
 //
-//  NavigationView+NavigationBarColor.swift
+//  NavigationBarViewModifier.swift
 //  Football Chants
 //
 //  Created by Bambang Tri Rahmat Doni on 11/12/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationBarModifierView: ViewModifier {
+struct NavigationBarViewModifier: ViewModifier {
 
     var backgroundColor: UIColor?
     var titleColor: UIColor?
@@ -33,8 +33,9 @@ struct NavigationBarModifierView: ViewModifier {
 
 extension View {
     func navigationBarColor(backgroundColor: Color? = nil, titleColor: UIColor? = nil) -> some View {
-        self.modifier(NavigationBarModifierView(backgroundColor: backgroundColor, titleColor: titleColor))
+        self.modifier(NavigationBarViewModifier(backgroundColor: backgroundColor, titleColor: titleColor))
     }
 
 }
+
 
