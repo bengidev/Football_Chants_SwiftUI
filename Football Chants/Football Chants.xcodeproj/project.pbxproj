@@ -33,6 +33,7 @@
 		B6F7D4D42B26AA8800FD9F30 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4D32B26AA8800FD9F30 /* TeamView.swift */; };
 		B6F7D4D62B26AAB700FD9F30 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4D52B26AAB700FD9F30 /* Team.swift */; };
 		B6F7D4D92B26AB5C00FD9F30 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4D82B26AB5C00FD9F30 /* Manager.swift */; };
+		B6F7D4DC2B26B7BF00FD9F30 /* NavigationView+NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D4DB2B26B7BF00FD9F30 /* NavigationView+NavigationBarColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		B6F7D4D32B26AA8800FD9F30 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		B6F7D4D52B26AAB700FD9F30 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B6F7D4D82B26AB5C00FD9F30 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		B6F7D4DB2B26B7BF00FD9F30 /* NavigationView+NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationView+NavigationBarColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B6F7D4D12B26AA4100FD9F30 /* ViewModels */,
 				B6F7D4D22B26AA4E00FD9F30 /* Models */,
 				B6F7D49E2B26A54E00FD9F30 /* Resources */,
+				B6F7D4DA2B26B75200FD9F30 /* Extensions */,
 				B6F7D4952B26A20800FD9F30 /* Preview Content */,
 			);
 			path = "Football Chants";
@@ -179,6 +182,14 @@
 				B6F7D4D82B26AB5C00FD9F30 /* Manager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B6F7D4DA2B26B75200FD9F30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6F7D4DB2B26B7BF00FD9F30 /* NavigationView+NavigationBarColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 				B6F7D4CD2B26A67800FD9F30 /* TeamViewModel.swift in Sources */,
 				B6F7D4D62B26AAB700FD9F30 /* Team.swift in Sources */,
 				B6F7D4D42B26AA8800FD9F30 /* TeamView.swift in Sources */,
+				B6F7D4DC2B26B7BF00FD9F30 /* NavigationView+NavigationBarColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

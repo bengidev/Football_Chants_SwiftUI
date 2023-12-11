@@ -9,8 +9,18 @@ import SwiftUI
 
 struct TeamView: View {
     var body: some View {
-        VStack {
-            self.helloView()
+        NavigationView {
+            ZStack {
+                Color.app
+                    .ignoresSafeArea()
+                
+                VStack {
+                    self.helloView()
+                }
+            }
+            .navigationTitle("Football Chants")
+            .navigationBarTitleDisplayMode(.large)
+            .navigationBarColor(backgroundColor: .app)
         }
     }
 }
