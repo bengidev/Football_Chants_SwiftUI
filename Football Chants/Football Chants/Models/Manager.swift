@@ -16,9 +16,9 @@ struct Manager: Hashable, Identifiable {
 }
 
 extension Manager {
-    enum Job: Hashable, Identifiable, CaseIterable {
+    enum Job: String, Hashable, Identifiable, CaseIterable {
         var id: Self { return self }
-        case manager
-        case headCoach
+        case manager = "Manager"
+        case headCoach = "Head Coach"
     }
 }

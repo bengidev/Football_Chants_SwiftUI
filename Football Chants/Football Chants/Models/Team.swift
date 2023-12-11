@@ -17,10 +17,10 @@ struct Team: Hashable, Identifiable {
     
     static let empty: Team = .init(
         id: .manchesterUnited,
-        name: "",
-        info: "",
-        founded: "",
-        manager: .empty
+        name: "Manchester United",
+        info: "Manchester United Football Club, commonly referred to as Man United (often stylised as Man Utd), or simply United, is a professional football club based in Old Trafford, Greater Manchester, England. The club competes in the Premier League, the top division in the English football league system. Nicknamed the Red Devils, they were founded as Newton Heath LYR Football Club in 1878, but changed their name to Manchester United in 1902. After a spell playing in Clayton, Manchester, the club moved to their current stadium, Old Trafford, in 1910.",
+        founded: "1878",
+        manager: .init(name: "Erik ten Hag", job: .manager)
     )
     
     mutating func toggleIsPlayingChant() -> Void {
