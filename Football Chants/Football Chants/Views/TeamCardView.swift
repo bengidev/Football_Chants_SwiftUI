@@ -16,27 +16,36 @@ struct TeamCardView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50.0, height: 50.0)
+                .accessibilityLabel(Text("\(self.team.name) Badge"))
             
             VStack(alignment: .leading) {
                 Text(self.team.name)
                     .font(.system(.title2, design: .rounded).bold())
-                    .padding(.bottom, 10.0)
+                    .padding(.bottom, 5.0)
+                    .accessibilityLabel(Text("Team Name"))
+                    .accessibilityValue(Text(self.team.name))
                 
                 Group {
                     Text("Founded: ") +
                     Text(self.team.founded)
                 }
-                .font(.headline.weight(.light).italic())
+                .font(.subheadline.weight(.light).italic())
+                .accessibilityLabel(Text("Year Founded"))
+                .accessibilityValue(Text(self.team.founded))
                 
                 Group {
                     Text("Current \(self.team.manager.job.rawValue): ") +
                     Text("\(self.team.manager.name)")
                 }
-                .font(.headline.weight(.light).italic())
+                .font(.subheadline.weight(.light).italic())
                 .padding(.bottom, 5.0)
+                .accessibilityLabel(Text("Current \(self.team.manager.job.rawValue)"))
+                .accessibilityValue(Text(self.team.manager.name))
                 
                 Text(self.team.info)
                     .font(.footnote)
+                    .accessibilityLabel(Text("Team Info"))
+                    .accessibilityValue(Text(self.team.info))
             }
             
             Button {
@@ -46,10 +55,11 @@ struct TeamCardView: View {
             }
             .font(.largeTitle)
             .foregroundColor(Color.white)
-            .frame(
-                maxWidth: 40.0,
-                maxHeight: .infinity,
-                alignment: .center
+            .frame(maxHeight: .infinity, alignment: .center)
+            .accessibilityElement(children: .ignore)
+            .accessibilityValue(Text(self.team.isPlayingChant ?
+                                     "Pause Chants" : 
+                                        "Play Chants")
             )
         }
         .teamCard(self.team.id)
