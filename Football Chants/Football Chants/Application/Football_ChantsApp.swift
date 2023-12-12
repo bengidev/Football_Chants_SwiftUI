@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Football_ChantsApp: App {
+    @StateObject private var vm = TeamViewModel()
     var body: some Scene {
         WindowGroup {
-            TeamView(team: .empty)
+            Group {
+                TeamView()
+            }
+            .environmentObject(self.vm)
         }
     }
 }

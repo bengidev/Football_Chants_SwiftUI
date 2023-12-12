@@ -25,19 +25,21 @@ struct TeamCardView: View {
                     .accessibilityLabel(Text("Team Name"))
                     .accessibilityValue(Text(self.team.name))
                 
-                Group {
-                    Text("Founded: ") +
+                HStack(alignment: .center,spacing: 5.0) {
+                    Text("Founded: ")
+                        .font(.subheadline.weight(.light).italic().bold())
                     Text(self.team.founded)
+                        .font(.subheadline.weight(.light).italic())
                 }
-                .font(.subheadline.weight(.light).italic())
                 .accessibilityLabel(Text("Year Founded"))
                 .accessibilityValue(Text(self.team.founded))
                 
-                Group {
-                    Text("Current \(self.team.manager.job.rawValue): ") +
+                HStack(alignment: .center,spacing: 5.0) {
+                    Text("Current \(self.team.manager.job.rawValue): ")
+                        .font(.subheadline.weight(.light).italic().bold())
                     Text("\(self.team.manager.name)")
+                        .font(.subheadline.weight(.light).italic())
                 }
-                .font(.subheadline.weight(.light).italic())
                 .padding(.bottom, 5.0)
                 .accessibilityLabel(Text("Current \(self.team.manager.job.rawValue)"))
                 .accessibilityValue(Text(self.team.manager.name))
@@ -68,4 +70,5 @@ struct TeamCardView: View {
 
 #Preview {
     TeamCardView(team: .empty)
+        .previewLayout(.sizeThatFits)
 }

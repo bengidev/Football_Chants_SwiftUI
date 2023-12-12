@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TeamView: View {
-    let team: Team
+    @EnvironmentObject private var vm: TeamViewModel
     
     var body: some View {
         NavigationView {
@@ -16,10 +16,14 @@ struct TeamView: View {
                 Color.gray.opacity(0.2)
                     .ignoresSafeArea()
                 
-                List(0..<5) { item in
-                    TeamCardView(team: .empty)
+                ScrollView {
+                    LazyVStack {
+                        ForEach(self.vm.teams) { team in
+                            TeamCardView(team: team)
+                        }
+                    }
+                    .padding()
                 }
-                .listStyle(.plain)
             }
             .navigationTitle("Football Chants")
             .navigationBarTitleDisplayMode(.large)
@@ -28,7 +32,8 @@ struct TeamView: View {
 }
 
 #Preview {
-    TeamView(team: .empty)
+    TeamView()
+        .environmentObject(TeamViewModel())
 }
 
 private extension TeamView {
