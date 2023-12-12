@@ -32,22 +32,9 @@ struct TeamCardView: View {
                 self.teamInfoView()
             }
             
-            Button {
-                self.delegate?.completionHandler(self.team) 
-            } label: {
-                Image(systemName: self.team.isPlayingChant ?
-                      "pause.circle.fill" :
-                        "play.circle.fill"
-                )
+            self.playButton {
+                self.delegate?.completionHandler(self.team)
             }
-            .font(.largeTitle)
-            .foregroundColor(Color.white)
-            .frame(maxHeight: .infinity, alignment: .center)
-            .accessibilityElement(children: .ignore)
-            .accessibilityValue(Text(self.team.isPlayingChant ?
-                                     "Pause Chants" : 
-                                        "Play Chants")
-            )
         }
         .animation(.easeInOut, value: self.team)
         .teamCard(self.team.id)
@@ -68,7 +55,7 @@ private extension TeamCardView {
             .frame(width: 50.0, height: 50.0)
             .accessibilityLabel(Text("\(self.team.name) Badge"))
     }
-
+    
     @ViewBuilder
     private func teamNameView() -> some View {
         Text(self.team.name)
@@ -77,7 +64,7 @@ private extension TeamCardView {
             .accessibilityLabel(Text("Team Name"))
             .accessibilityValue(Text(self.team.name))
     }
-
+    
     @ViewBuilder
     private func teamFoundedView() -> some View {
         HStack(alignment: .center,spacing: 5.0) {
@@ -89,7 +76,7 @@ private extension TeamCardView {
         .accessibilityLabel(Text("Year Founded"))
         .accessibilityValue(Text(self.team.founded))
     }
-
+    
     @ViewBuilder
     private func teamLeaderView() -> some View {
         HStack(alignment: .center,spacing: 5.0) {
@@ -110,7 +97,22 @@ private extension TeamCardView {
             .accessibilityLabel(Text("Team Info"))
             .accessibilityValue(Text(self.team.info))
     }
-
-
+    
+    @ViewBuilder
+    private func playButton(action: (@escaping () -> Void) = {}) -> some View {
+        Button(action: action) {
+            Image(systemName: self.team.isPlayingChant ?
+                  "pause.circle.fill" :
+                    "play.circle.fill"
+            )
+        }
+        .font(.largeTitle)
+        .foregroundColor(Color.white)
+        .frame(maxHeight: .infinity, alignment: .center)
+        .accessibilityElement(children: .ignore)
+        .accessibilityValue(Text(self.team.isPlayingChant ?
+                                 "Pause Chants" :
+                                    "Play Chants")
+        )
+    }    
 }
-
