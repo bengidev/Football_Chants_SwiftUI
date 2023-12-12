@@ -25,5 +25,15 @@ struct Team: Hashable, Identifiable {
     
     mutating func toggleIsPlayingChant() -> Void {
         self.isPlayingChant.toggle()
+        
+        print("Toggle isPlayingChant: \(self.isPlayingChant)")
+        dump(self.isPlayingChant, name: "Toggle isPlayingChant")
+        
+        print("Team isPlayingChant: \(self.name)")
+        dump(self.name, name: "Team isPlayingChant")
+    }
+    
+    mutating func resetPlayingChant() -> Void {
+        self.isPlayingChant = false
     }
 }

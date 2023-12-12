@@ -87,4 +87,15 @@ final class TeamViewModel: ObservableObject {
              founded: "1877", manager: .init(name: "Nuno Espírito Santo", job: .headCoach)),
     ]
     
+    func playChant(for selectedTeam: Team) -> Void {
+        for (index, team) in self.teams.enumerated() {
+            self.teams[index].resetPlayingChant()
+            
+            if team == selectedTeam && !selectedTeam.isPlayingChant {
+                self.teams[index].toggleIsPlayingChant()
+            } else {
+                self.teams[index].resetPlayingChant()
+            }
+        }
+    }
 }

@@ -7,8 +7,19 @@
 
 import SwiftUI
 
+protocol TeamDelegate {
+    func completionHandler(_ team: Team) -> Void
+}
+
+extension TeamDelegate {
+    func completionHandler(_ team: Team) {
+        print("Selected Team: \(team.name)")
+    }
+}
+
 struct TeamCardView: View {
     let team: Team
+    var delegate: TeamDelegate?
     
     var body: some View {
         HStack(alignment: .top) {
@@ -51,9 +62,12 @@ struct TeamCardView: View {
             }
             
             Button {
-                //
+                self.delegate?.completionHandler(self.team) 
             } label: {
-                Image(systemName: "play.circle.fill")
+                Image(systemName: self.team.isPlayingChant ?
+                      "pause.circle.fill" :
+                        "play.circle.fill"
+                )
             }
             .font(.largeTitle)
             .foregroundColor(Color.white)
@@ -64,6 +78,7 @@ struct TeamCardView: View {
                                         "Play Chants")
             )
         }
+        .animation(.easeInOut, value: self.team)
         .teamCard(self.team.id)
     }
 }

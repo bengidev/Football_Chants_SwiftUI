@@ -19,7 +19,7 @@ struct TeamView: View {
                 ScrollView {
                     LazyVStack {
                         ForEach(self.vm.teams) { team in
-                            TeamCardView(team: team)
+                            TeamCardView(team: team, delegate: self)
                         }
                     }
                     .padding()
@@ -27,6 +27,7 @@ struct TeamView: View {
             }
             .navigationTitle("Football Chants")
             .navigationBarTitleDisplayMode(.large)
+            .animation(.easeInOut, value: self.vm.teams)
         }
     }
 }
@@ -34,6 +35,12 @@ struct TeamView: View {
 #Preview {
     TeamView()
         .environmentObject(TeamViewModel())
+}
+
+extension TeamView: TeamDelegate {
+    func completionHandler(_ team: Team) {
+        self.vm.playChant(for: team)
+    }
 }
 
 private extension TeamView {
