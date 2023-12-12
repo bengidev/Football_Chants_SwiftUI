@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B627EB7E2B27C507004D7598 /* TeamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627EB7D2B27C507004D7598 /* TeamCardView.swift */; };
+		B627EB812B2801CC004D7598 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627EB802B2801CC004D7598 /* AudioManager.swift */; };
 		B6F7D4902B26A20600FD9F30 /* Football_ChantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F7D48F2B26A20600FD9F30 /* Football_ChantsApp.swift */; };
 		B6F7D4942B26A20800FD9F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4932B26A20800FD9F30 /* Assets.xcassets */; };
 		B6F7D4972B26A20800FD9F30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F7D4962B26A20800FD9F30 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		B627EB7D2B27C507004D7598 /* TeamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardView.swift; sourceTree = "<group>"; };
+		B627EB802B2801CC004D7598 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		B6F7D48C2B26A20600FD9F30 /* Football Chants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Chants.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F7D48F2B26A20600FD9F30 /* Football_ChantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_ChantsApp.swift; sourceTree = "<group>"; };
 		B6F7D4932B26A20800FD9F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B627EB7F2B280191004D7598 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B627EB802B2801CC004D7598 /* AudioManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		B6F7D4832B26A20600FD9F30 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 				B6F7D4D22B26AA4E00FD9F30 /* Models */,
 				B6F7D49E2B26A54E00FD9F30 /* Resources */,
 				B6F7D4DD2B26E60D00FD9F30 /* ViewModifiers */,
+				B627EB7F2B280191004D7598 /* Managers */,
 				B6F7D4952B26A20800FD9F30 /* Preview Content */,
 			);
 			path = "Football Chants";
@@ -294,6 +305,7 @@
 				B6F7D4CD2B26A67800FD9F30 /* TeamViewModel.swift in Sources */,
 				B627EB7E2B27C507004D7598 /* TeamCardView.swift in Sources */,
 				B6F7D4D62B26AAB700FD9F30 /* Team.swift in Sources */,
+				B627EB812B2801CC004D7598 /* AudioManager.swift in Sources */,
 				B6F7D4D42B26AA8800FD9F30 /* TeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

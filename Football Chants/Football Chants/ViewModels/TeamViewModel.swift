@@ -87,6 +87,8 @@ final class TeamViewModel: ObservableObject {
              founded: "1877", manager: .init(name: "Nuno Espírito Santo", job: .headCoach)),
     ]
     
+    private let audioManager = AudioManager()
+    
     func playChant(for selectedTeam: Team) -> Void {
         for (index, team) in self.teams.enumerated() {
             self.teams[index].resetPlayingChant()
@@ -96,6 +98,12 @@ final class TeamViewModel: ObservableObject {
             } else {
                 self.teams[index].resetPlayingChant()
             }
+        }
+        
+        if selectedTeam.isPlayingChant {
+            self.audioManager.resetChant()
+        } else {
+            self.audioManager.playChant(for: selectedTeam)
         }
     }
 }
